@@ -1468,3 +1468,8 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2023-09-17 10:37:51,620 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2023-09-17 10:37:51,621 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-09-17 10:37:51,622 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\MAVEN PROJECT\FirstMVNProject\src\test\resources
+2023-09-17 11:05:30,825 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-09-17 11:05:34,591 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-17 11:05:34,596 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-09-17 11:05:34,598 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-17 11:05:34,599 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\MAVEN PROJECT\FirstMVNProject\src\test\resources
