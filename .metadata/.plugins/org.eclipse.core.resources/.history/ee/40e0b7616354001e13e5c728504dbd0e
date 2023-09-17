@@ -1,0 +1,45 @@
+package com.cozentusFirstMVNProject;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.omg.IOP.ServiceContext;
+@WebServlet("/FetchServlet")
+public class FetchServlet extends HttpServlet{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		
+		res.setContentType("text/html");
+		PrintWriter pw = res.getWriter();
+		ServletContext sc = getServletContext();
+		
+		   //pw.println("Servlet Context Value :"+sc);
+//		sc.setAttribute("Name","Rachana");
+//		sc.setAttribute("Password", "rachana@123");
+//		
+//		
+//		RequestDispatcher rd = req.getRequestDispatcher("FetchServlet");
+//		rd.forward(req, res);
+		 
+		String Name = (String) sc.getAttribute("Name");
+		String Password = (String) sc.getAttribute("Password");
+
+		pw.println("User name holds in session :" +Name +"<br><br>");
+		pw.println("User Password holds in session : "+Password +"<br><br>");
+	}
+
+}
