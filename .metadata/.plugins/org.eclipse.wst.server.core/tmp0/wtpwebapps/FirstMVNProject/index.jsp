@@ -38,12 +38,14 @@
 				aria-expanded="false" aria-label="Toggle navigation">
 				Menu <i class="fas fa-bars"></i>
 			</button>
+			
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="login.jsp">Login</a></li>
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="registration.jsp">Registration</a></li>
+						
 					
 				</ul>
 			</div>
@@ -69,6 +71,46 @@
 	</header>
 	
 	</section>
+	
+	<div class="row">
+		<!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
+
+		<div class="container">
+			<h3 class="text-center">List of Users</h3>
+			<hr>
+			<div class="container text-left">
+
+				<a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
+					User</a>
+			</div>
+			<br>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Country</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--   for (Todo todo: todos) {  -->
+					<c:forEach var="user" items="${listUser}">
+
+						<tr>
+							<td><c:out value="${user.id}" /></td>
+							<td><c:out value="${user.name}" /></td>
+							<td><c:out value="${user.email}" /></td>
+							<td><c:out value="${user.country}" /></td>
+							
+					</c:forEach>
+					<!-- } -->
+				</tbody>
+
+			</table>
+		</div>
+	</div>
 	
 			<!-- Contact Section Form-->
 			<div class="row justify-content-center">
