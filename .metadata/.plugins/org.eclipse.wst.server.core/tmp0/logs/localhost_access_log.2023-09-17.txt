@@ -224,3 +224,12 @@
 0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:24:37 +0530] "POST /FirstMVNProject/update HTTP/1.1" 404 777
 0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:29:01 +0530] "GET /FirstMVNProject/ HTTP/1.1" 200 8471
 0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:29:01 +0530] "GET /FirstMVNProject/alert/dist/sweetalert.css HTTP/1.1" 404 804
+127.0.0.1 - - [17/Sep/2023:21:30:00 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:00 +0530] "GET /FirstMVNProject/ HTTP/1.1" 200 8471
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:00 +0530] "GET /FirstMVNProject/alert/dist/sweetalert.css HTTP/1.1" 404 804
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:05 +0530] "GET /FirstMVNProject/ HTTP/1.1" 200 8471
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:05 +0530] "GET /FirstMVNProject/alert/dist/sweetalert.css HTTP/1.1" 404 804
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:39 +0530] "GET /FirstMVNProject/ HTTP/1.1" 200 7263
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:39 +0530] "GET /FirstMVNProject/alert/dist/sweetalert.css HTTP/1.1" 404 804
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:43 +0530] "GET /FirstMVNProject/ HTTP/1.1" 200 7263
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:21:30:43 +0530] "GET /FirstMVNProject/alert/dist/sweetalert.css HTTP/1.1" 404 804
